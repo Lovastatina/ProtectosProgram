@@ -983,6 +983,7 @@ GameObject:
   - component: {fileID: 1558408912}
   - component: {fileID: 1558408914}
   - component: {fileID: 1558408915}
+  - component: {fileID: 1558408916}
   m_Layer: 0
   m_Name: ballin
   m_TagString: Untagged
@@ -1094,6 +1095,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.072956346}
   serializedVersion: 2
   m_Radius: 3.0490267
+--- !u!114 &1558408916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558408911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae528a4e5f39ef4892f9684cb616354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Saltof: 20
 --- !u!1 &1802240964
 GameObject:
   m_ObjectHideFlags: 0
