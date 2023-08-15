@@ -10,4 +10,20 @@ Oggetto
 Instancia-Materialización
 El monitor de pablo ---> Resolución de 200pp, Tamaño de 32 inch
 
-Claz to Object is instanciación.                                                                                                                                                                                                                                                                                              
+Claz to Object is instanciación.          
+
+ Public class DispositivoMovil 
+                   ---- {
+                   1        int ram;
+ Cuerpo de clase  -1        int almacenamiento;
+                   1        float tamano;
+       		   1        int resolucionAncho;
+		   1	    int resolucionAlto;	
+		   1        Color color;	
+                   ---- }
+
+(palabra reservada solo tiene un único proposito.)
+
+
+
+                                                                                                                                                                                                                                                                     
