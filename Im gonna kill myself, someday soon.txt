@@ -1,0 +1,13 @@
+Programación Orientada a Objetos
+Progración Orientada a Componentes.
+
+Class
+is an abstraction come una especia de plantilla. Namaw della class, atributos o propiedas, métodos o acciones.
+Ej.   Monitor --> Resolución, tamaño ---> Mostrar imágenes.
+
+
+Oggetto
+Instancia-Materialización
+El monitor de pablo ---> Resolución de 200pp, Tamaño de 32 inch
+
+Claz to Object is instanciación.                                                                                                                                                                                                                                                                                              
