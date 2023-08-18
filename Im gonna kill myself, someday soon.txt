@@ -1,4 +1,4 @@
-Programación Orientada a Objetos
+Programación Orientada a oggetti
 Progración Orientada a Componentes.
 
 Class
