@@ -2,7 +2,7 @@
 
 namespace Tarea
 {
-    class Compas
+    public class Compas
     {
         public int numerador;
         public int denominador;

@@ -13,7 +13,7 @@ namespace Tarea
             Cancion Vampira = new Cancion();
             Vampira.bpm = 90;
             Vampira.dura = 204;
-            Vampira.salida = 1996;
+            Vampira.anio = 1996;
             Vampira.compas = new Compas();
             Vampira.compas.numerador = 4;
             Vampira.compas.denominador = 4;
@@ -21,7 +21,7 @@ namespace Tarea
             Cancion Waltzno2 = new Cancion();
             Waltzno2.bpm = 180;
             Waltzno2.dura = 223;
-            Waltzno2.salida = 2020;
+            Waltzno2.anio = 2020;
             Waltzno2.compas = new Compas();
             Waltzno2.compas.numerador = 2;
             Waltzno2.compas.denominador = 3;
@@ -29,7 +29,7 @@ namespace Tarea
             Cancion CorazondeOro = new Cancion();
             CorazondeOro.bpm = 112;
             CorazondeOro.dura = 227;
-            CorazondeOro.salida = 1998;
+            CorazondeOro.anio = 1998;
             CorazondeOro.compas = new Compas();
             CorazondeOro.compas.numerador = 4;
             CorazondeOro.compas.denominador = 4;
@@ -37,7 +37,7 @@ namespace Tarea
             Cancion CincoCuartos = new Cancion();
             CincoCuartos.bpm = 96;
             CincoCuartos.dura = 162;
-            CincoCuartos.salida = 2001;
+            CincoCuartos.anio = 2001;
             CincoCuartos.compas = new Compas();
             CincoCuartos.compas.numerador = 5;
             CincoCuartos.compas.denominador = 4;
@@ -45,7 +45,7 @@ namespace Tarea
             Cancion OloraGas = new Cancion();
             OloraGas.bpm = 101;
             OloraGas.dura = 222;
-            OloraGas.salida = 1997;
+            OloraGas.anio = 1997;
             OloraGas.compas = new Compas();
             OloraGas.compas.numerador = 6;
             OloraGas.compas.denominador = 8;
