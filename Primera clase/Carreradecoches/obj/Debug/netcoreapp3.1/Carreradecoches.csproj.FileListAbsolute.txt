@@ -1,0 +1,14 @@
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\bin\Debug\netcoreapp3.1\Carreradecoches.exe
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\bin\Debug\netcoreapp3.1\Carreradecoches.deps.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\bin\Debug\netcoreapp3.1\Carreradecoches.runtimeconfig.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\bin\Debug\netcoreapp3.1\Carreradecoches.runtimeconfig.dev.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\bin\Debug\netcoreapp3.1\Carreradecoches.dll
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\bin\Debug\netcoreapp3.1\Carreradecoches.pdb
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\obj\Debug\netcoreapp3.1\Carreradecoches.csproj.AssemblyReference.cache
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\obj\Debug\netcoreapp3.1\Carreradecoches.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\obj\Debug\netcoreapp3.1\Carreradecoches.AssemblyInfoInputs.cache
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\obj\Debug\netcoreapp3.1\Carreradecoches.AssemblyInfo.cs
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\obj\Debug\netcoreapp3.1\Carreradecoches.csproj.CoreCompileInputs.cache
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\obj\Debug\netcoreapp3.1\Carreradecoches.dll
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\obj\Debug\netcoreapp3.1\Carreradecoches.pdb
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Carreradecoches\obj\Debug\netcoreapp3.1\Carreradecoches.genruntimeconfig.cache

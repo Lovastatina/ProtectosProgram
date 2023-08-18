@@ -25,5 +25,12 @@ Claz to Object is instanciación.
 (palabra reservada solo tiene un único proposito.)
 
 
+Int - Entero - Int Edad = 20;
+long - Entero grande - long dissol = 5000000;
+float - decimal - fliat estatura = 1.69;
+double - decimal preciso - double masa = 0.000000005;
+char - letra o carácter - char inicial = 'M';
+string - texto - string apellido = "ramirez"; [Elemental]
+bool - verdadero o falso - bool am = false;
 
                                                                                                                                                                                                                                                                      

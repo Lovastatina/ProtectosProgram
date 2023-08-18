@@ -8,6 +8,6 @@ namespace Tarea
         public int singep;
         public int aniodebt;
         public int albums;
-        
+        public string nombre;
     }
 }
