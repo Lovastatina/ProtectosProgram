@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Clase2
 {
-    class Misc
+    public class Misc
     {
         public string color;
         public string mod;

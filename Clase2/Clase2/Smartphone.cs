@@ -4,37 +4,19 @@ namespace Clase2
 {
     public class Smartphone
     {
-        //Tech
-        public int netTech;
-        public int launchYear;
-        public float weight;
-
-        //sound 
-        public Dimensions dimensions;
-        public string build;
-        public string sim;
-        public string type;
-        public float displaysize;
-        public int reslarge;
-        public int reswide;
-        public string proct;
-        public string os;
-        public string chipset;
-        public string CPU;
-        public string GPU;
-        public string memcardslot;
-        public MemInt Mem;
+        public string namae;
+        public Network net;
+        public Launch lonch;
+        public Body bud;
+        public Display dis;
+        public Platform plat;
+        public MemInt memo;
         public Maincam main;
         public SelfCam self;
-        public string Lspeaker;
-        public string wifi;
-        public int blue;
-        public bool nfc;
-        public bool infport;
-        public string radio;
-        public string featseans;
-        public string battype;
-
+        public Sound sound;
+        public Comms Com;
+        public Features feat;
+        public Battery bat;
         public Misc misc;
 
     }
