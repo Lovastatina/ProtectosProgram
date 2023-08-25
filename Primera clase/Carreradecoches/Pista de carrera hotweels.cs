@@ -9,7 +9,9 @@ namespace Carreradecoches
         public string name;
 
 
-    //metodo de dos paránetros
+    //metodo de dos           parámatros (opcional)
+    
+
     public void Competir(Auto auto1, Auto auto2){
                                                               //concatenación
             Console.WriteLine("Iniciando competencia entre " + auto1.mod + " contra " + auto2.mod);
@@ -25,7 +27,7 @@ namespace Carreradecoches
 
             }
 
-            else
+            else 
             {
                 Console.WriteLine("Hubo un empate");
             }
