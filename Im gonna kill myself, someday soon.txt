@@ -33,4 +33,9 @@ char - letra o carácter - char inicial = 'M';
 string - texto - string apellido = "ramirez"; [Elemental]
 bool - verdadero o falso - bool am = false;
 
+
+Tarea:
+Investigar las contenciones de código para C#. Aprender colocación de llaves y nombres para identificadores. Identación. Tab 
+
+Maquina destados, controla las diferentes acciones del personaje.
                                                                                                                                                                                                                                                                      
