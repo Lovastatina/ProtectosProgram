@@ -38,4 +38,13 @@ Tarea:
 Investigar las contenciones de código para C#. Aprender colocación de llaves y nombres para identificadores. Identación. Tab 
 
 Maquina destados, controla las diferentes acciones del personaje.
+
+
+
+Void Método (Parámetro)                 public class el pepe; Declaración
+ float variablelocal;                   elpepe = 4; Uso
+
+
+
+
                                                                                                                                                                                                                                                                      
