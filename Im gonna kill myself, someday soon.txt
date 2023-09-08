@@ -53,7 +53,7 @@ Metodos denotan acciones iniciar con un verbo
 Clase sustantivos 
 
 
-Arreglos
+Arreglos Conexiones
 
 int[] edad = {2,3,4,1,34}; Declaración explicita
 
@@ -61,7 +61,13 @@ float[] altura = new float[20]; Implicita
 
 string[] ciudades; Sin inicializar
 
-inand now the end is near so i face the final curtain my friend i said it clear and stated my case of wich im certain i lived a life thats full i traveled each and every highway more much more than this i did it my way, regrets i have a few but then again too few to mention i did what i had to do and saw it through without excemption i planned each charted course each careful step along the by way and more much more than this i did it my way. Yes there were times im sure you knew when i bited off more than i could chew but through it all when there was doubt i ate it all and spit it out i faced it all and i stood tall and did it my way i loved, i laughed and cried and have my fails my share or loosing and now with tears subsive i find it all so amusing to think i did all that i may i say not in a shy way oh no oh no not me i did it my way for what is a mouse what has he got if not himself then he has not to say the things he truly feels and no the word of one who kneels the record shows i took the blows and did it my way
+and now the end is near so i face the final curtain my friend i said it clear and stated my case of wich im certain i lived a life thats full i traveled each and every highway more much more than this i did it my way, regrets i have a few but then again too few to mention i did what i had to do and saw it through without excemption i planned each charted course each careful step along the by way and more much more than this i did it my way. Yes there were times im sure you knew when i bited off more than i could chew but through it all when there was doubt i ate it all and spit it out i faced it all and i stood tall and did it my way i loved, i laughed and cried and have my fails my share or loosing and now with tears subsive i find it all so amusing to think i did all that i may i say not in a shy way oh no oh no not me i did it my way for what is a mouse what has he got if not himself then he has not to say the things he truly feels and no the word of one who kneels the record shows i took the blows and did it my way
+
+Quiero quemar todo atravesando la pista no me importa lo que digan ya esta saca chispa al suelo no te resistas fuego en la disco con mis compinches en la disco che nunca habia visto tanto hipster superstar a lo jesucristo soy arisco si me clavó el disco ella es miss histeriquismo yo rapkolismo prometieron party fiesta en san francisco caribe esta en la entrada y me venden el obelisco un chasco encima debe estar lleno de hiltons admistique un robo pero sin tener pistol como no voy a ser discolo si con el derecho de admision hay que ser aristocrata o del elitismo entre ellos y yo hay un abismo entre gorras y jet treva soy el mismo espejitos de colores que compramos nos defraudan un fiasco happy hour de evdir el fisco estamos prendido fuego como nicky lauda en la ñery disco, Quiero... Shhh no digas nada y que gane el contoneo que esta llama se la robe a prometeo puedo endurecer el barro y derretir el oro y que terminen en un tarro las cenizas de un tesoro hoy voy solo ese es mi rol como un trol sin control la razon en formol ardiendo como el sol en un crisol hoy soy the king of the world ey mi ansiedad encendio una mecha hecha con mi desencanto y no hay sospecha que domar fuego sin amianto atravesando brechas me hiso indesctructible hasta el dia de la fecha me aparesco y me esfumo entre el humo que nos crea me miran porque presumo que el que me mira se quema puedo paracer arisco pero ese ya es otro tema
+
+Dentro de clase atributos de arreglo de cadenas 
+
+Metodos  para generar 
 
 
                                                                                                                                                                                                                                                                      
