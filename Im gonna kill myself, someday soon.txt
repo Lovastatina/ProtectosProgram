@@ -45,6 +45,23 @@ Void Método (Parámetro)                 public class el pepe; Declaración
  float variablelocal;                   elpepe = 4; Uso
 
 
+PascalCase = Clase y Propiedades.
+
+camelCase= Método, Atributo, Vars in, Parametros
+
+Metodos denotan acciones iniciar con un verbo
+Clase sustantivos 
+
+
+Arreglos
+
+int[] edad = {2,3,4,1,34}; Declaración explicita
+
+float[] altura = new float[20]; Implicita
+
+string[] ciudades; Sin inicializar
+
+inand now the end is near so i face the final curtain my friend i said it clear and stated my case of wich im certain i lived a life thats full i traveled each and every highway more much more than this i did it my way, regrets i have a few but then again too few to mention i did what i had to do and saw it through without excemption i planned each charted course each careful step along the by way and more much more than this i did it my way. Yes there were times im sure you knew when i bited off more than i could chew but through it all when there was doubt i ate it all and spit it out i faced it all and i stood tall and did it my way i loved, i laughed and cried and have my fails my share or loosing and now with tears subsive i find it all so amusing to think i did all that i may i say not in a shy way oh no oh no not me i did it my way for what is a mouse what has he got if not himself then he has not to say the things he truly feels and no the word of one who kneels the record shows i took the blows and did it my way
 
 
                                                                                                                                                                                                                                                                      

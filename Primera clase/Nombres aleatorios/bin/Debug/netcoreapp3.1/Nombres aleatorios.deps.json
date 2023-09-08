@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Nombres aleatorios/1.0.0": {
+        "runtime": {
+          "Nombres aleatorios.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nombres aleatorios/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
