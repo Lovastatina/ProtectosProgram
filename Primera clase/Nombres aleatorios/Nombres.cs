@@ -6,8 +6,13 @@ namespace Nombres_aleatorios
     {
         public static void Main(string[] args)
         {
+            GeneradorNombres Villano = new GeneradorNombres();
+            Villano.numTel = 3;
+            Villano.numTar = 4;
+            Villano.numMes = 1;
 
 
+            Villano.Generar();
 
             Console.Read();
 

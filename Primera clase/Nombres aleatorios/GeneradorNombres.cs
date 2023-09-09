@@ -6,32 +6,49 @@ namespace Nombres_aleatorios
 {
     public class GeneradorNombres
     {
-        public string[] numNam = { "El doctor", "El soldado", "El jinete", "El profesor", "El payaso" };
 
-        public string[] numTelefono = { " como intestinos.", " golpea cachorros.", " destroza desayunos.", " mata franceses.", " aplasta ardillas" };
+        public string[] numTelefono = { "El doctor", "El soldado", "El jinete", "El profesor", "El payaso", "El maníaco", "La peste", "La rata", "El obispo", "El vampiro" };
 
-        public string final;
+        public string[] numTarjeta = { " come", " golpea", " destroza", " mata", " aplasta", " devora", " destaza", " vomita", " roba", " abraza"};
 
-        public int numMes = 2;
-        public int numTel = 3;
+        public string[] numNam = { " hígados.", " cachorros.", " desayunos.", " franceses.", " ardillas.", " huérfanos.", " huesos.", " zapatos.", " panistas.", " cerebros.", " almas.", " activistas ambientales." };
+
+        public int numMes;
+        public int numTel;
+        public int numTar;
 
         public void Generar()
         {
-            for (int i = 0; i < numNam.Length; i++)
-            {
-                Console.WriteLine(i + 1 + ".- " + numNam[i]);
-               
-            }
-
+            Console.WriteLine("Arma tu nombre de villano.");
+            Console.WriteLine("");
+            Console.WriteLine("Primer dígito del código de seguridad de tu tarjeta bancaria.");
             for (int e = 0; e < numTelefono.Length; e++)
             {
-                Console.WriteLine(e + 1 + ".- " + numNam[e]);
-               
+                Console.WriteLine(e + ") " + numTelefono[e]);
+
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Último dígito de tu número de teléfono:");
+            for (int e = 0; e < numTarjeta.Length; e++)
+            {
+                Console.WriteLine(e + ") " + numTarjeta[e]);
+
             }
 
 
-            Console.WriteLine("Tu nombre de villano es " + numNam[numMes] + numTelefono[numTel]);
+            Console.WriteLine("");
+            Console.WriteLine("Tu mes de nacimiento:");
+            for (int i = 0; i < numNam.Length; i++)
+            {
+                Console.WriteLine(i + 1 + ") " + numNam[i]);
 
+            }
+
+
+            Console.WriteLine("");
+            Console.WriteLine("Tu nombre de villano es: ");
+            Console.WriteLine(numTelefono[numTel] + numTarjeta[numTar] +  numNam[numMes - 1]);
 
 
 
