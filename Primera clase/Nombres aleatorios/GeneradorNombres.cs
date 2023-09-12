@@ -7,17 +7,26 @@ namespace Nombres_aleatorios
     public class GeneradorNombres
     {
 
-        public string[] numTelefono = { "El doctor", "El soldado", "El jinete", "El profesor", "El payaso", "El maníaco", "La peste", "La rata", "El obispo", "El vampiro" };
+        public string[] numTelefono = {
+            "El doctor", "El soldado", "El jinete", "El profesor", "El payaso",
+            "El maníaco", "La peste","La rata", "El obispo", "El vampiro"
+        };
 
-        public string[] numTarjeta = { " come", " golpea", " destroza", " mata", " aplasta", " devora", " destaza", " vomita", " roba", " abraza"};
+        public string[] numTarjeta = {
+            " come", " golpea", " destroza", " mata", " aplasta",
+            " devora", " destaza", " vomita", " roba", " abraza"
+        };
 
-        public string[] numNam = { " hígados.", " cachorros.", " desayunos.", " franceses.", " ardillas.", " huérfanos.", " huesos.", " zapatos.", " panistas.", " cerebros.", " almas.", " activistas ambientales." };
+        public string[] numNam = {
+            " hígados.", " cachorros.", " desayunos.", " franceses.", " ardillas."," huérfanos.",
+            " huesos.", " zapatos.", " panistas.", " cerebros.", " almas.", " activistas ambientales."
+        };
 
         public int numMes;
         public int numTel;
         public int numTar;
 
-        public void Generar()
+        public void generarNombre()
         {
             Console.WriteLine("Arma tu nombre de villano.");
             Console.WriteLine("");
@@ -45,17 +54,10 @@ namespace Nombres_aleatorios
 
             }
 
-
             Console.WriteLine("");
             Console.WriteLine("Tu nombre de villano es: ");
             Console.WriteLine(numTelefono[numTel] + numTarjeta[numTar] +  numNam[numMes - 1]);
 
-
-
         }
-
-
-
     }
-
 }

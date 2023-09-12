@@ -12,7 +12,7 @@ namespace Nombres_aleatorios
             Villano.numMes = 1;
 
 
-            Villano.Generar();
+            Villano.generarNombre();
 
             Console.Read();
 
