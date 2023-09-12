@@ -1,0 +1,14 @@
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.exe
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.deps.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.runtimeconfig.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.runtimeconfig.dev.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.dll
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.pdb
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.csproj.AssemblyReference.cache
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.AssemblyInfoInputs.cache
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.AssemblyInfo.cs
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.csproj.CoreCompileInputs.cache
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.dll
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.pdb
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.genruntimeconfig.cache

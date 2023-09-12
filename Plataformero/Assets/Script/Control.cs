@@ -5,22 +5,44 @@ using UnityEngine;
 public class Control : MonoBehaviour
 
 {
-    private Rigidbody2D MiCuerpo;
-    private Animator MiAnimador;
+    public float velCaminar = 10;
+
+    private Rigidbody2D miCuerpo;
+    private Animator miAnimador;
     // Start is called before the first frame update
     void Start()
     {
-        MiCuerpo = GetComponent<Rigidbody2D>();
-        MiAnimador = GetComponent<Animator>();
+        miCuerpo = GetComponent<Rigidbody2D>();
+        miAnimador = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float velVert = MiCuerpo.velocity.y;
-        MiCuerpo.velocity = new Vector3(5, velVert, 0);
-   
+        float velVert = miCuerpo.velocity.y;
 
-        MiAnimador.SetBool("Caminando", true);
+        float movHoriz = Input.GetAxis("Horizontal");
+
+        if(movHoriz > 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+            miCuerpo.velocity = new Vector3(velCaminar, velVert, 0);
+            miAnimador.SetBool("Caminando", true);
+        }
+
+        else if(movHoriz<0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            miCuerpo.velocity = new Vector3(-velCaminar, velVert, 0);
+            miAnimador.SetBool("Caminando", true);
+
+        }
+
+        else
+        {
+            miCuerpo.velocity = new Vector3(0, velVert, 0);
+            miAnimador.SetBool("Caminando", false);
+        }
+
     }
 }

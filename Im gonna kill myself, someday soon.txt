@@ -69,5 +69,108 @@ Dentro de clase atributos de arreglo de cadenas
 
 Metodos  para generar 
 
+realmente no debí haberme despertado hoy
+
+Un pendejo y un ladron, de clases distintas.  Ladron es de la clase culero, y el pendejo es de clase ciudadano
+
+Necesito que mi cuenta bancaria este protegide, darle proteccion.
+
+Modificiadores de visibilidad. Atributos, clases metodos. El mundo es de quien nació para conquistarlo, no para quien sueña que puede hacerlo, aunque tenga razón.
+Public, protected private y [...] default.   
+Nel para Variables locales, namespaces
+
+Public: todos.
+Protected: Solo clases hijas.
+Default: Clases hermanes.                            
+Private: Ninguno, solo la propia clase.
+
+Clase es hermana si esta dentro del mismo namespace. 
+
+----------------Encapsulamiento.------------------------------
+
+CUENTA BANCARIA
+- saldo (guion menos es private)
+
++ getSaldo(); Más es public
++ setSaldo();
+
+Patrón de programación de encapsulamiento.
+-Cierra acceso a los atributos.
+-Abre el acceso de forma controlada mendiante getter y setters.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                                                                                                                                                                                                                                                      
