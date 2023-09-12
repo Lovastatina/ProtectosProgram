@@ -98,6 +98,14 @@ Patrón de programación de encapsulamiento.
 -Cierra acceso a los atributos.
 -Abre el acceso de forma controlada mendiante getter y setters.
 
+Ejercicio de cuenta bancaria
+Crear Nueve proyecte
+Nueva clase llamada Cuenta bancaria.
+Agregar a la clase los atributos 
+ - Pin
+ -Saldo
+Agregar a la clase los métodos get y set de cada atributo.
+
 
 
 
