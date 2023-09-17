@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "n59HRmK74UAee25WwfxDYIMITO5jNpEzni+nkyILfgB69mL31X0O/+83G0rSa1I3sFS/Ho5khWh5vuT954eS/w==",
+  "dgSpecHash": "2MN+Paf1PwdD9GI8IeWfE8gqdgB6hMG+BRTBccfRC/RXQg7i4FVHb0EgsUX2wAOIWgHgwAW7B9J4PMx2BZwJrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebastian.ixtla\\Documents\\GitHub\\ProtectosProgram\\Primera clase\\Primera clase\\Primera clase.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\User\\Documents\\GitHub\\ProtectosProgram\\Primera clase\\Primera clase\\Primera clase.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

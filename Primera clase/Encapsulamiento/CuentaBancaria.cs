@@ -27,14 +27,14 @@ namespace Encapsulamiento
 
         public float getSaldo()
         {
-            if(getPin() > 0)
+            if(getPin() != 0)
             {
                 return saldo;
             }
             else
             {
-               Console.WriteLine("No se puede consultar el saldo");
-                    return -1111111;
+               Console.WriteLine("PIN inválido. No se puede consultar el saldo");
+                    return -777;
             }   
             
         }

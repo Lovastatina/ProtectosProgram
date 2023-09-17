@@ -12,7 +12,7 @@ namespace Encapsulamiento
             Pepe.setSaldo(1471.99f);
             
             Console.WriteLine("Tu pin es: " + Pepe.getPin());
-            Console.WriteLine("Tu saldo actual es: " + Pepe.getSaldo());
+            Console.WriteLine("Tu saldo actual es de: " + Pepe.getSaldo() +"$" );
 
             Console.Read();
         }

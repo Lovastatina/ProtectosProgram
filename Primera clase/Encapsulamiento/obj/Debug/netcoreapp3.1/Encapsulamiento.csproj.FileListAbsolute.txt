@@ -12,3 +12,17 @@ C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsu
 C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.dll
 C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.pdb
 C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.genruntimeconfig.cache
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.dll
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.pdb
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.exe
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.deps.json
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.runtimeconfig.json
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.dll
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\bin\Debug\netcoreapp3.1\Encapsulamiento.pdb
+C:\Users\User\Documents\GitHub\ProtectosProgram\Primera clase\Encapsulamiento\obj\Debug\netcoreapp3.1\Encapsulamiento.genruntimeconfig.cache
