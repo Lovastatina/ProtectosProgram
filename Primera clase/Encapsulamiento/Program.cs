@@ -8,7 +8,7 @@ namespace Encapsulamiento
         {
             CuentaBancaria Pepe = new CuentaBancaria();
 
-            Pepe.setPin(680);
+            Pepe.setPin(0);
             Pepe.setSaldo(1471.99f);
             
             Console.WriteLine("Tu pin es: " + Pepe.getPin());
