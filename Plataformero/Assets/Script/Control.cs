@@ -6,6 +6,7 @@ public class Control : MonoBehaviour
 
 {
     public float velCaminar = 10;
+    public float fuerzaSalto = 23;
 
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
@@ -23,11 +24,13 @@ public class Control : MonoBehaviour
 
         float movHoriz = Input.GetAxis("Horizontal");
 
+        bool movSalto = Input.GetButtonDown("Jump");
+
         if(movHoriz > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
             miCuerpo.velocity = new Vector3(velCaminar, velVert, 0);
-            miAnimador.SetBool("Caminando", true);
+            miAnimador.SetBool("Caminando", true);         
         }
 
         else if(movHoriz<0)
@@ -44,5 +47,15 @@ public class Control : MonoBehaviour
             miAnimador.SetBool("Caminando", false);
         }
 
+        if (movSalto == true) {
+            miCuerpo.AddForce(transform.up*fuerzaSalto, ForceMode2D.Impulse);
+            
+        }
+
+        miAnimador.SetFloat("vel_ver", velVert);
+   
+
+
     }
+  
 }
