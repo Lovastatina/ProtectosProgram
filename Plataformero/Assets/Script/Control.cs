@@ -7,6 +7,8 @@ public class Control : MonoBehaviour
 {
     public float velCaminar = 10;
     public float fuerzaSalto = 23;
+    public bool enPiso;
+    int e = 2 ;
 
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
@@ -20,6 +22,8 @@ public class Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        detectarPiso();
+
         float velVert = miCuerpo.velocity.y;
 
         float movHoriz = Input.GetAxis("Horizontal");
@@ -47,15 +51,36 @@ public class Control : MonoBehaviour
             miAnimador.SetBool("Caminando", false);
         }
 
-        if (movSalto == true) {
-            miCuerpo.AddForce(transform.up*fuerzaSalto, ForceMode2D.Impulse);
-            
+        if (enPiso == true & movSalto == true)
+        {
+            e = 2;
+            miCuerpo.AddForce(transform.up * fuerzaSalto, ForceMode2D.Impulse);
+            e = e - 1;
         }
 
-        miAnimador.SetFloat("vel_ver", velVert);
-   
+        else if (e > 0 & movSalto==true)
+        {
+            miCuerpo.AddForce(transform.up * fuerzaSalto, ForceMode2D.Impulse);
+            e = e- 1;
+        }
+         
 
+    
+        
+
+        miAnimador.SetFloat("vel_ver", velVert);
 
     }
+
+    void detectarPiso()
+    {
+        enPiso = Physics2D.Raycast(
+            transform.position,  //desde donde sale el rasho
+            Vector2.down, //en que dirección
+            0.1f
+            );
+
+    }
+
   
 }
