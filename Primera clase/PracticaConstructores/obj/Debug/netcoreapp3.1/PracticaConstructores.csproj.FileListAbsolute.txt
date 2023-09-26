@@ -1,0 +1,13 @@
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\bin\Debug\netcoreapp3.1\PracticaConstructores.exe
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\bin\Debug\netcoreapp3.1\PracticaConstructores.deps.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\bin\Debug\netcoreapp3.1\PracticaConstructores.runtimeconfig.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\bin\Debug\netcoreapp3.1\PracticaConstructores.runtimeconfig.dev.json
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\bin\Debug\netcoreapp3.1\PracticaConstructores.dll
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\bin\Debug\netcoreapp3.1\PracticaConstructores.pdb
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\obj\Debug\netcoreapp3.1\PracticaConstructores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\obj\Debug\netcoreapp3.1\PracticaConstructores.AssemblyInfoInputs.cache
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\obj\Debug\netcoreapp3.1\PracticaConstructores.AssemblyInfo.cs
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\obj\Debug\netcoreapp3.1\PracticaConstructores.csproj.CoreCompileInputs.cache
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\obj\Debug\netcoreapp3.1\PracticaConstructores.dll
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\obj\Debug\netcoreapp3.1\PracticaConstructores.pdb
+C:\Users\sebastian.ixtla\Documents\GitHub\ProtectosProgram\Primera clase\PracticaConstructores\obj\Debug\netcoreapp3.1\PracticaConstructores.genruntimeconfig.cache

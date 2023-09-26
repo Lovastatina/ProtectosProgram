@@ -98,17 +98,26 @@ Patrón de programación de encapsulamiento.
 -Cierra acceso a los atributos.
 -Abre el acceso de forma controlada mendiante getter y setters.
 
-Ejercicio de cuenta bancaria
-Crear Nueve proyecte
-Nueva clase llamada Cuenta bancaria.
-Agregar a la clase los atributos 
- - Pin
- -Saldo
-Agregar a la clase los métodos get y set de cada atributo.
+
+Constructor
+
+Producto
+precio
+marca
+-------
+describir()
+vender()
+
+Tipo especial de metodo que se ejecuja al instanciar. Define el estado inicial del objeto. Se llama exactamente igual a la clase. No tiene tipo de retorno
+
+public string describir()
+public void vender()
+public Producto ()
+
+en los void no se usa return
 
 
-
-
+Hacer dos clases más: una clase para un circulo y otrapara truiangulo, cada clase debe de tener un constructor que reciba los parametros necesarios para hacer las figuras. Metodo que calcule el perimetro. Dos de cada une. Atributos correspondientes.
 
 
 
