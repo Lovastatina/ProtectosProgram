@@ -116,9 +116,8 @@ public Producto ()
 
 en los void no se usa return
 
-
-Hacer dos clases más: una clase para un circulo y otrapara truiangulo, cada clase debe de tener un constructor que reciba los parametros necesarios para hacer las figuras. Metodo que calcule el perimetro. Dos de cada une. Atributos correspondientes.
-
+Tarea: Mostrar la cantidad de vidas que tenga nuestro heroe, el score y el status de nuestro personaje.
+Nella squina superiore dritta se va a mostrar una barra de villane, se usa el mismo scrip de controlador ui y mismo script de personaje. Los voy a matar. El villano solo es sprite y script. jajaja ayudenme me voya matar non posso avere
 
 
 
