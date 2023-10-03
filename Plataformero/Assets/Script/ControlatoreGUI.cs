@@ -15,7 +15,7 @@ public class ControlatoreGUI : MonoBehaviour
     public Text EtiquetaHPVillano;
     public Image BarraHPVillano;
 
-    // Aishitemaru L
+   
     void Update()
     {
         EtiquetaHPHeroe.text = Heroe.hp + "/" + Heroe.hpMax;

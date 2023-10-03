@@ -116,8 +116,7 @@ public Producto ()
 
 en los void no se usa return
 
-Tarea: Mostrar la cantidad de vidas que tenga nuestro heroe, el score y el status de nuestro personaje.
-Nella squina superiore dritta se va a mostrar una barra de villane, se usa el mismo scrip de controlador ui y mismo script de personaje. Los voy a matar. El villano solo es sprite y script. jajaja ayudenme me voya matar non posso avere
+Tarea: Hacer que cuando el personaje reciba daño hacer que muestre sangre y coracao para muerte
 
 
 

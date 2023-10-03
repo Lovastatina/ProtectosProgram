@@ -20,4 +20,17 @@ public class Personaggio : MonoBehaviour
     {
         
     }
+
+    public void fareDamage(int puntesDam, GameObject enemigue)
+    {
+        hp = hp - puntesDam;
+        print(name + "recibe daño de :" + puntesDam + " por " + enemigue);
+    }
+
+    public void muerteInstantanea(GameObject who)
+    {
+        print(name + " murió instantaneamente por" + who);
+        hp = 0;
+    }
+
 }
