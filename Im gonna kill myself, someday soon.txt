@@ -116,16 +116,10 @@ public Producto ()
 
 en los void no se usa return
 
-Tarea: Hacer que cuando el personaje reciba daño hacer que muestre sangre y coracao para muerte
 
 
-
-
-
-
-
-
-
+Asignar sonidos a las acciones de dañar y morir. Asignar sonido a la zona de muerte para hacer splash.
+Sewconda. Armar il suo primo enemico. Soltanto tre animazione: idle, caminare, suffrie dannio. Debe de tener asignados los script personaje y effetto sonoro.
 
 
 

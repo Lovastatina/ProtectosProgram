@@ -831,6 +831,8 @@ MonoBehaviour:
   hpMax: 2000
   vite: 3
   score: 0
+  sangue: {fileID: 0}
+  persoVite: {fileID: 0}
 --- !u!1001 &523945515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99107,6 +99109,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3180014164630376220, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
+      propertyPath: misEfectos.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180014164630376220, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
+      propertyPath: misEfectos.Array.data[0].azione
+      value: Dannio
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180014164630376220, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
+      propertyPath: misEfectos.Array.data[0].archivoSonido
+      value: 
+      objectReference: {fileID: 8300000, guid: bb21c6937295a954fbe51156021b0d2d, type: 3}
     - target: {fileID: 4679664227802904234, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
       propertyPath: m_Name
       value: Cavernicola (Jugador)

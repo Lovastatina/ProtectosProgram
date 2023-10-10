@@ -10,11 +10,14 @@ public class Personaggio : MonoBehaviour
     public int score = 0;
     public GameObject sangue;
     public GameObject persoVite;
+    private Animator miAnimadore;
+    private EffetiSonore misSonidos;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        miAnimadore = GetComponent<Animator>();
+        misSonidos = GetComponent<EffetiSonore>();
     }
 
     // Update is called once per frame
@@ -26,25 +29,38 @@ public class Personaggio : MonoBehaviour
     public void fareDamage(int puntesDam, GameObject enemigue)
     {
         hp = hp - puntesDam;
-        print(name + "recibe daño de :" + puntesDam + " por " + enemigue);
+        Personaggio elPer = GetComponent<Personaggio>();
 
-        GameObject efettoSangue = Instantiate(sangue);
-        Personaggio elPer= GetComponent<Personaggio>();
-        efettoSangue.transform.position = elPer.transform.position;
        
-        if(hp<=0)
+
+         if (hp <= 0)
         {
+            misSonidos.reproducir("Morte");
+            miAnimadore.SetTrigger("morir");
             vite = vite - 1;
             GameObject efettoVite = Instantiate(persoVite);
             efettoVite.transform.position = elPer.transform.position;
         }
 
+        else 
+        {
+            misSonidos.reproducir("Dannio");
+
+            print(name + "recibe daño de :" + puntesDam + " por " + enemigue);
+
+            miAnimadore.SetTrigger("danniar");
+            GameObject efettoSangue = Instantiate(sangue);
+
+            efettoSangue.transform.position = elPer.transform.position;
+        }
     }
 
     public void muerteInstantanea(GameObject who)
     {
+
         print(name + " murió instantaneamente por" + who);
         hp = 0;
+        miAnimadore.SetTrigger("morir");
         Personaggio elPerr = GetComponent<Personaggio>();
         vite = vite - 1;
         GameObject efettoVite = Instantiate(persoVite);
