@@ -60,6 +60,7 @@ public class Personaggio : MonoBehaviour
 
         print(name + " murió instantaneamente por" + who);
         hp = 0;
+        misSonidos.reproducir("Morte");
         miAnimadore.SetTrigger("morir");
         Personaggio elPerr = GetComponent<Personaggio>();
         vite = vite - 1;
