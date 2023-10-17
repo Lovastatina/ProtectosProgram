@@ -9,6 +9,7 @@ public class CameraHell : MonoBehaviour
     void start()
     {
 
+
     }
 
     // Update is called once per frame

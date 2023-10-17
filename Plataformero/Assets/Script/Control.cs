@@ -12,11 +12,13 @@ public class Control : MonoBehaviour
 
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
+    private EffetiSonore misSonidos;
     // Start is called before the first frame update
     void Start()
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
+        misSonidos = GetComponent<EffetiSonore>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,11 @@ public class Control : MonoBehaviour
 
         bool movSalto = Input.GetButtonDown("Jump");
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+            miAnimador.SetTrigger("golpear");
+        }
+        
         if(movHoriz > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -53,6 +60,7 @@ public class Control : MonoBehaviour
 
         if (enPiso == true & movSalto == true)
         {
+            misSonidos.reproducir("Salto");
             e = 2;
             miCuerpo.AddForce(transform.up * fuerzaSalto, ForceMode2D.Impulse);
             e = e - 1;
@@ -60,6 +68,7 @@ public class Control : MonoBehaviour
 
         else if (e > 0 & movSalto==true)
         {
+            misSonidos.reproducir("Salto");
             miCuerpo.AddForce(transform.up * fuerzaSalto, ForceMode2D.Impulse);
             e = e- 1;
         }
