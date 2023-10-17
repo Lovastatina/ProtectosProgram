@@ -99459,7 +99459,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3180014164630376220, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
       propertyPath: misEfectos.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3180014164630376220, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
       propertyPath: misEfectos.Array.data[0].azione
@@ -99471,7 +99471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3180014164630376220, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
       propertyPath: misEfectos.Array.data[2].azione
-      value: Splash
+      value: Salto
       objectReference: {fileID: 0}
     - target: {fileID: 3180014164630376220, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
       propertyPath: misEfectos.Array.data[0].archivoSonido
@@ -99484,7 +99484,7 @@ PrefabInstance:
     - target: {fileID: 3180014164630376220, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
       propertyPath: misEfectos.Array.data[2].archivoSonido
       value: 
-      objectReference: {fileID: 8300000, guid: 3fba2dfcab1a9cc4887ee1b327b1c5ca, type: 3}
+      objectReference: {fileID: 8300000, guid: b99b40d77621f004399d5a62429320f1, type: 3}
     - target: {fileID: 4679664227802904234, guid: b5247b08e7fc1e54abe4eeb0e03fd196, type: 3}
       propertyPath: m_Name
       value: Cavernicola (Jugador)
