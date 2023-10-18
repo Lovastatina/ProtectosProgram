@@ -29,6 +29,7 @@ public class Personaggio : MonoBehaviour
     public void fareDamage(int puntesDam, GameObject enemigue)
     {
         hp = hp - puntesDam;
+        
         Personaggio elPer = GetComponent<Personaggio>();
 
        

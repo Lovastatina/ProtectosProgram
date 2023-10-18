@@ -11,7 +11,7 @@ public class ChisaiiNemico : MonoBehaviour
     public Transform caver;
     public Transform nemico;
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col) 
     {
         GameObject otroObjeto = col.gameObject;
 
@@ -33,14 +33,21 @@ public class ChisaiiNemico : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D colli)
-    { //Este método se ejecuta cuando detecta una colisión 
+    private void OnCollisionEnter2D(Collision2D collisionn)
+    { 
 
-        GameObject otroObjeto = colli.gameObject;
+        GameObject otroObjeto = collisionn.gameObject;
+
         if (otroObjeto.tag == "Player")
         {
+ 
+
             Personaggio elPersonn = otroObjeto.GetComponent<Personaggio>();
+
             elPersonn.fareDamage(20, this.gameObject);
+
+
+
         }
     }
 

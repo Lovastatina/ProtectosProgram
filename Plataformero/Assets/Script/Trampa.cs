@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trampa : MonoBehaviour
 {
-    public GameObject sanguePrefab;
+  
     private void OnCollisionEnter2D(Collision2D collision)
     { //Este método se ejecuta cuando detecta una colisión 
 
