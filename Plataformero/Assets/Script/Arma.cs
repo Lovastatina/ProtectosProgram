@@ -10,8 +10,6 @@ public class Arma : MonoBehaviour
         GameObject otroObjetto = colli.gameObject;
 
 
-        if(colli is UnityEngine.CapsuleCollider2D)
-        {
 
         
         if (otroObjetto.tag == "Enemigo")
@@ -25,7 +23,7 @@ public class Arma : MonoBehaviour
 
 
         }
-        }
+        
 
     }
 

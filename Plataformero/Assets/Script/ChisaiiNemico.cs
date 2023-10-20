@@ -8,9 +8,13 @@ public class ChisaiiNemico : MonoBehaviour
     private bool cerca;
     private Rigidbody2D elCuerpo;
     private Animator elAnimador;
+    private GameObject heroJugador;
+    public float rangoAgro = 3;
     public Transform caver;
     public Transform nemico;
 
+
+    
     private void OnTriggerEnter2D(Collider2D col) 
     {
         GameObject otroObjeto = col.gameObject;
@@ -55,10 +59,27 @@ public class ChisaiiNemico : MonoBehaviour
     {
         elCuerpo = GetComponent<Rigidbody2D>();
         elAnimador = GetComponent<Animator>();
+        heroJugador = GameObject.FindGameObjectWithTag("Player");
     }
     void Update()
     {
-       if(cerca == true)
+        Vector3 miPos = this.transform.position;
+        Vector3 posHeroe = heroJugador.transform.position;
+        float distanciaHeroe = (miPos - posHeroe).magnitude;
+
+        if(distanciaHeroe < rangoAgro)
+        {
+            cerca = true;
+        }
+
+
+        else 
+        {
+            cerca = true;
+        }
+
+
+        if (cerca==true)
         {
             elAnimador.SetBool("Cam", true);
             if (caver.position.x < nemico.position.x)

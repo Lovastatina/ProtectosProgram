@@ -117,9 +117,7 @@ public Producto ()
 en los void no se usa return
 
 
-
-Asignar sonidos a las acciones de dañar y morir. Asignar sonido a la zona de muerte para hacer splash.
-Sewconda. Armar il suo primo enemico. Soltanto tre animazione: idle, caminare, suffrie dannio. Debe de tener asignados los script personaje y effetto sonoro.
+Crear enemigo agresivo y recrear el comportamniento, si se detecta dentro del area de ataque entonces activar animacion de ataque y el daño sera un trigger no el collider
 
 
 
