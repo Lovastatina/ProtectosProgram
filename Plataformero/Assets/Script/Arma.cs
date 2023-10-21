@@ -10,21 +10,21 @@ public class Arma : MonoBehaviour
         GameObject otroObjetto = colli.gameObject;
 
 
-
-        
-        if (otroObjetto.tag == "Enemigo")
+        if (colli is UnityEngine.CapsuleCollider2D)
         {
-            print(name + " Detecté colisión con " + otroObjetto);
+            if (otroObjetto.tag == "Enemigo")
+            {
+                print(name + " Detecté colisión con " + otroObjetto);
 
-            Personaggio elEnemigo = otroObjetto.GetComponent<Personaggio>();
+                Personaggio elEnemigo = otroObjetto.GetComponent<Personaggio>();
 
-            elEnemigo.fareDamage(20, this.gameObject);
+                elEnemigo.fareDamage(20, this.gameObject);
+
+            }
 
 
 
         }
-        
-
     }
 
 }
