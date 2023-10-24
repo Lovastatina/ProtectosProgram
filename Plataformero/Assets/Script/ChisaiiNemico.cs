@@ -12,9 +12,9 @@ public class ChisaiiNemico : MonoBehaviour
     public float rangoAgro = 3;
     public Transform caver;
     public Transform nemico;
+    private Personaggio elEnemigo;
 
 
-    
     private void OnTriggerEnter2D(Collider2D col) 
     {
         GameObject otroObjeto = col.gameObject;
@@ -48,8 +48,11 @@ public class ChisaiiNemico : MonoBehaviour
 
             Personaggio elPersonn = otroObjeto.GetComponent<Personaggio>();
 
-            elPersonn.fareDamage(20, this.gameObject);
-
+            if (elPersonn.estaVivo())
+            {
+                elPersonn.fareDamage(20, this.gameObject);
+                
+            }
 
 
         }
@@ -59,6 +62,7 @@ public class ChisaiiNemico : MonoBehaviour
     {
         elCuerpo = GetComponent<Rigidbody2D>();
         elAnimador = GetComponent<Animator>();
+        elEnemigo = GetComponent<Personaggio>();
         heroJugador = GameObject.FindGameObjectWithTag("Player");
     }
     void Update()
@@ -66,8 +70,9 @@ public class ChisaiiNemico : MonoBehaviour
         Vector3 miPos = this.transform.position;
         Vector3 posHeroe = heroJugador.transform.position;
         float distanciaHeroe = (miPos - posHeroe).magnitude;
+        Personaggio heroeVivo = heroJugador.GetComponent<Personaggio>();
 
-        if(distanciaHeroe < rangoAgro)
+        if (distanciaHeroe < rangoAgro && heroeVivo.estaVivo())
         {
             cerca = true;
         }
@@ -79,7 +84,7 @@ public class ChisaiiNemico : MonoBehaviour
         }
 
 
-        if (cerca==true)
+        if (cerca==true && elEnemigo.estaVivo())
         {
             elAnimador.SetBool("Cam", true);
             if (caver.position.x < nemico.position.x)
@@ -103,8 +108,8 @@ public class ChisaiiNemico : MonoBehaviour
             elAnimador.SetBool("Cam", false);
 
         }
-        
 
+       
         
         
     }

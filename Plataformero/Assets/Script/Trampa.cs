@@ -15,8 +15,8 @@ public class Trampa : MonoBehaviour
             print(name + " Detecté colisión con " + otroObjeto);
 
             Personaggio elPerso = otroObjeto.GetComponent<Personaggio>();
-
-            elPerso.fareDamage(20, this.gameObject);
+           
+                elPerso.fareDamage(20, this.gameObject);
 
 
 

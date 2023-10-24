@@ -28,10 +28,9 @@ public class EnemigoAtacante : MonoBehaviour
 
             Personaggio elPersonn = otroObjeto.GetComponent<Personaggio>();
 
-
-             
+           
                 elPersonn.fareDamage(20, this.gameObject);
-          
+           
         }
     }
 
@@ -40,14 +39,16 @@ public class EnemigoAtacante : MonoBehaviour
         elCuerpo = GetComponent<Rigidbody2D>();
         elAnimador = GetComponent<Animator>();
         heroJugador = GameObject.FindGameObjectWithTag("Player");
+       
     }
     void Update()
     {
         Vector3 miPos = this.transform.position;
         Vector3 posHeroe = heroJugador.transform.position;
         float distanciaHeroe = (miPos - posHeroe).magnitude;
+        Personaggio heroeVivo = heroJugador.GetComponent<Personaggio>();
 
-        if (distanciaHeroe < rangoAgro)
+        if (distanciaHeroe < rangoAgro && heroeVivo.estaVivo())
         {
             cerca = true;
         }
@@ -84,7 +85,7 @@ public class EnemigoAtacante : MonoBehaviour
 
         }
 
-        if (distanciaHeroe < rangoAtaque)
+        if (distanciaHeroe < rangoAtaque && heroeVivo.estaVivo())
         {
             elAnimador.SetTrigger("atacar");
             elCuerpo.velocity = new Vector3(0, 0, 0);

@@ -24,7 +24,7 @@ public class ControlatoreGUI : MonoBehaviour
 
         BarraHPHeroe.fillAmount = percentHPHeroe;
 
-        ViteHeroe.text = Heroe.vite +"";
+        ViteHeroe.text = Personaggio.vite +"";
 
         ScoreHeroe.text = "Score: " + Heroe.score + "";
 

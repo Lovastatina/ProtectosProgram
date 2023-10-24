@@ -13,17 +13,22 @@ public class Control : MonoBehaviour
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
     private EffetiSonore misSonidos;
+    private Personaggio miPersonaje;
     // Start is called before the first frame update
     void Start()
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
         misSonidos = GetComponent<EffetiSonore>();
+        miPersonaje = GetComponent<Personaggio>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        bool puedoMover = miPersonaje.estaVivo() && !miPersonaje.block;
+
+
         detectarPiso();
 
         float velVert = miCuerpo.velocity.y;
@@ -32,19 +37,19 @@ public class Control : MonoBehaviour
 
         bool movSalto = Input.GetButtonDown("Jump");
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && puedoMover)
         {
             miAnimador.SetTrigger("golpear");
         }
         
-        if(movHoriz > 0)
+        if(movHoriz > 0 && puedoMover)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
             miCuerpo.velocity = new Vector3(velCaminar, velVert, 0);
             miAnimador.SetBool("Caminando", true);         
         }
 
-        else if(movHoriz<0)
+        else if(movHoriz<0 && puedoMover)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
             miCuerpo.velocity = new Vector3(-velCaminar, velVert, 0);
@@ -58,7 +63,7 @@ public class Control : MonoBehaviour
             miAnimador.SetBool("Caminando", false);
         }
 
-        if (enPiso == true & movSalto == true)
+        if (enPiso == true & movSalto == true && puedoMover)
         {
             misSonidos.reproducir("Salto");
             e = 2;
@@ -66,7 +71,7 @@ public class Control : MonoBehaviour
             e = e - 1;
         }
 
-        else if (e > 0 & movSalto==true)
+        else if (e > 0 & movSalto==true && puedoMover)
         {
             misSonidos.reproducir("Salto");
             miCuerpo.AddForce(transform.up * fuerzaSalto, ForceMode2D.Impulse);

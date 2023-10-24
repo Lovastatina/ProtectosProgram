@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CameraHell : MonoBehaviour
 {
-    public Transform juegador;
+    public Personaggio Heroe;
+  
 
     void start()
     {
@@ -15,7 +16,10 @@ public class CameraHell : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(juegador.position.x, juegador.position.y, -1);
+        if (Heroe.estaVivo())
+        {
+            transform.position = new Vector3(Heroe.transform.position.x, Heroe.transform.position.y, -1);
+        }
         
     }
 }
