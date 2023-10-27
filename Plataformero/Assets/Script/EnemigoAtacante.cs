@@ -13,6 +13,7 @@ public class EnemigoAtacante : MonoBehaviour
     public float rangoAtaque = 3;
     public Transform caver;
     public Transform nemico;
+    private Personaggio elEnemigo;
 
 
 
@@ -38,6 +39,7 @@ public class EnemigoAtacante : MonoBehaviour
     {
         elCuerpo = GetComponent<Rigidbody2D>();
         elAnimador = GetComponent<Animator>();
+        elEnemigo = GetComponent<Personaggio>();
         heroJugador = GameObject.FindGameObjectWithTag("Player");
        
     }
@@ -60,7 +62,7 @@ public class EnemigoAtacante : MonoBehaviour
         }
 
 
-        if (cerca == true)
+        if (cerca == true && elEnemigo.estaVivo())
         {
             elAnimador.SetBool("Cam", true);
             if (caver.position.x < nemico.position.x)
@@ -85,7 +87,7 @@ public class EnemigoAtacante : MonoBehaviour
 
         }
 
-        if (distanciaHeroe < rangoAtaque && heroeVivo.estaVivo())
+        if (distanciaHeroe < rangoAtaque && heroeVivo.estaVivo() && elEnemigo.estaVivo())
         {
             elAnimador.SetTrigger("atacar");
             elCuerpo.velocity = new Vector3(0, 0, 0);

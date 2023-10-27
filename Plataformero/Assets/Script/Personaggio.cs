@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using System;
 
 public class Personaggio : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Personaggio : MonoBehaviour
     private Animator miAnimadore;
     private EffetiSonore misSonidos;
     public bool block = false;
+    public static event Action muerteFinal;
 
 
 
@@ -34,6 +36,10 @@ public class Personaggio : MonoBehaviour
     {
         return hp > 0;
     }
+
+    
+  
+
     private void desbloquear()
     {
         block = false; 
@@ -58,17 +64,26 @@ public class Personaggio : MonoBehaviour
          
             misSonidos.reproducir("Morte");
             miAnimadore.SetTrigger("morir");
-            
             GameObject efettoVite = Instantiate(persoVite);
             efettoVite.transform.position = elPer.transform.position;
-            Personaggio.vite = Personaggio.vite - 1;
 
-            if (tag == "Player" && Personaggio.vite!=0)
+
+            if (tag == "Player")
             {
-                
-                Invoke("reiniciar", 3f);
-               
+                Personaggio.vite = Personaggio.vite - 1;
+
+                if (Personaggio.vite != 0)
+                {
+                    Invoke("reiniciar", 3f);
+                }
+
+                else if (Personaggio.vite == 0)
+                {
+                    muerteFinal?.Invoke();
+                }
             }
+
+
         }
 
         else if (estaVivo())
@@ -92,16 +107,25 @@ public class Personaggio : MonoBehaviour
         misSonidos.reproducir("Morte");
         miAnimadore.SetTrigger("morir");
         Personaggio elPerr = GetComponent<Personaggio>();
-        Personaggio.vite = Personaggio.vite - 1;
         GameObject efettoVite = Instantiate(persoVite);
         efettoVite.transform.position = elPerr.transform.position;
 
-        if (tag == "Player" && Personaggio.vite != 0)
+        if (tag == "Player")
         {
+            Personaggio.vite = Personaggio.vite - 1;
+           
+            if(Personaggio.vite != 0)
+            { 
+                Invoke("reiniciar", 3f);
+            }
 
-            Invoke("reiniciar", 3f);
-
+            else if (Personaggio.vite == 0)
+            {
+                muerteFinal?.Invoke();
+            }
         }
+
+        
     }
 
 }

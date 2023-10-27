@@ -15,7 +15,24 @@ public class ControlatoreGUI : MonoBehaviour
     public Text EtiquetaHPVillano;
     public Image BarraHPVillano;
 
-   
+
+    public GameObject gameOver;
+
+    private void OnEnable()
+    {
+        Personaggio.muerteFinal += activarMenu;
+    }
+
+    private void OnDisable()
+    {
+        Personaggio.muerteFinal -= activarMenu;
+    }
+
+    public void activarMenu()
+    {
+        gameOver.SetActive(true);
+    }
+
     void Update()
     {
         EtiquetaHPHeroe.text = Heroe.hp + "/" + Heroe.hpMax;

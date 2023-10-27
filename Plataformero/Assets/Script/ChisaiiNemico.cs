@@ -13,6 +13,7 @@ public class ChisaiiNemico : MonoBehaviour
     public Transform caver;
     public Transform nemico;
     private Personaggio elEnemigo;
+    public GameObject enemico;
 
 
     private void OnTriggerEnter2D(Collider2D col) 
@@ -56,6 +57,12 @@ public class ChisaiiNemico : MonoBehaviour
 
 
         }
+    }
+
+    public void morirDes()
+    {
+        enemico.SetActive(false);
+       
     }
 
     void Start()
@@ -109,8 +116,15 @@ public class ChisaiiNemico : MonoBehaviour
 
         }
 
-       
-        
-        
+        if (!elEnemigo.estaVivo())
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+            elCuerpo.simulated = false;
+            Invoke("morirDes", 3f);
+        }
+
+
+
+
     }
 }
