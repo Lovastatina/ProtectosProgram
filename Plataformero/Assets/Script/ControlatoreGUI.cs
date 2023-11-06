@@ -18,20 +18,20 @@ public class ControlatoreGUI : MonoBehaviour
 
     public GameObject gameOver;
 
-    private void OnEnable()
-    {
-        Personaggio.muerteFinal += activarMenu;
-    }
+   // private void OnEnable()
+   // {
+   //     Personaggio.muerteFinal += activarMenu;
+   // }
 
-    private void OnDisable()
-    {
-        Personaggio.muerteFinal -= activarMenu;
-    }
+   // private void OnDisable()
+   // {
+   //     Personaggio.muerteFinal -= activarMenu;
+   // }
 
-    public void activarMenu()
-    {
-        gameOver.SetActive(true);
-    }
+   // public void activarMenu()
+   // {
+   //     gameOver.SetActive(true);
+   // }
 
     void Update()
     {
@@ -53,6 +53,15 @@ public class ControlatoreGUI : MonoBehaviour
         BarraHPVillano.fillAmount = percentHPVillano;
 
 
+        if(Personaggio.vite == 0)
+        {
+            gameOver.SetActive(true);
+        }
+
+        else
+        {
+            gameOver.SetActive(false);
+        }
 
     }
 
