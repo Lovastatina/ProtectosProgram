@@ -16,7 +16,7 @@ public class Personaggio : MonoBehaviour
     private EffetiSonore misSonidos;
     public bool block = false;
     public static event Action muerteFinal;
-
+    public int dinero;
 
 
     // Start is called before the first frame update

@@ -15,6 +15,7 @@ public class ControlatoreGUI : MonoBehaviour
     public Text EtiquetaHPVillano;
     public Image BarraHPVillano;
 
+    public Text TesoroHeroe;
 
     public GameObject gameOver;
 
@@ -53,7 +54,11 @@ public class ControlatoreGUI : MonoBehaviour
         BarraHPVillano.fillAmount = percentHPVillano;
 
 
-        if(Personaggio.vite == 0)
+        TesoroHeroe.text = Heroe.dinero + "";
+
+
+
+        if (Personaggio.vite == 0)
         {
             gameOver.SetActive(true);
         }

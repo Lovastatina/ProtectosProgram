@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemigo
   - Tool
+  - Tesoro
   layers:
   - Default
   - TransparentFX

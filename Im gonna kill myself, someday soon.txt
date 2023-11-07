@@ -117,16 +117,12 @@ public Producto ()
 en los void no se usa return
 
 
-Crear enemigo agresivo y recrear el comportamniento, si se detecta dentro del area de ataque entonces activar animacion de ataque y el daño sera un trigger no el collider
+juego representativo, descripcion genera, tres mecanicas desde perspectiva tencina tratando de ver como se resolveria 5 - 10 min
 
+meter collider tipo trigger, etiquetar como tesoro, ajustar bien el pivot, implementar un script que se llame tesoro, atributo llamado valor que se suma a un contador en el personaje llamadop monei,
 
-
-
-
-
-
-
-
+eN EL otrigger verificar si tubivmos contatcto con giocattore, y sumamos al contador, y que la moneda desaparezca, se hace animnacion con animater, se hace traslusida; cuando toque la moneda el collider deja de funcionar, tienen que destruir la moneda pero no instantanea
+10*1
 
 
 
