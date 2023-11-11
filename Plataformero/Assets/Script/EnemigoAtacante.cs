@@ -14,7 +14,15 @@ public class EnemigoAtacante : MonoBehaviour
     public Transform caver;
     public Transform nemico;
     private Personaggio elEnemigo;
+    public GameObject PrefabRecompensa;
 
+    private void aparecer()
+    {
+        GameObject Recompensa = Instantiate(PrefabRecompensa);
+        Recompensa.transform.position = new Vector2(transform.position.x, transform.position.y - 0.55f);
+
+
+    }
 
 
 
@@ -103,7 +111,15 @@ public class EnemigoAtacante : MonoBehaviour
             GetComponent<BoxCollider2D>().enabled = false;
         }
 
+        if (!elEnemigo.estaVivo())
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+            elCuerpo.simulated = false;
+            Invoke("aparecer", 1.3f);
+            Destroy(gameObject, 1.3f);
 
+
+        }
 
 
     }

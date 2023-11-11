@@ -14,7 +14,15 @@ public class ChisaiiNemico : MonoBehaviour
     public Transform nemico;
     private Personaggio elEnemigo;
     public GameObject enemico;
+    public GameObject PrefabRecompensa;
 
+    private void aparecer()
+    {
+        GameObject Recompensa = Instantiate(PrefabRecompensa);
+        Recompensa.transform.position = new Vector2(transform.position.x,transform.position.y - 0.55f);
+
+
+    }
 
     private void OnTriggerEnter2D(Collider2D col) 
     {
@@ -59,11 +67,6 @@ public class ChisaiiNemico : MonoBehaviour
         }
     }
 
-    public void morirDes()
-    {
-        enemico.SetActive(false);
-       
-    }
 
     void Start()
     {
@@ -120,7 +123,10 @@ public class ChisaiiNemico : MonoBehaviour
         {
             GetComponent<BoxCollider2D>().enabled = false;
             elCuerpo.simulated = false;
-            Invoke("morirDes", 3f);
+            Invoke("aparecer", 1.3f);
+            Destroy(gameObject, 1.3f);
+           
+
         }
 
 

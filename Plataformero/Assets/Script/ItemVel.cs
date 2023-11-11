@@ -6,10 +6,11 @@ public class ItemVel : MonoBehaviour
 {
     private Animator miItem;
     private EffetiSonore misSonidos;
-    public Control caver;
+   
    
     private void normalizar()
     {
+        Control caver = GameObject.FindGameObjectWithTag("Player").GetComponent<Control>();
         caver.velCaminar = caver.velCaminar / 2;
     }
     private void OnTriggerEnter2D(Collider2D col)
@@ -20,7 +21,7 @@ public class ItemVel : MonoBehaviour
         {
             print("Se recogió bebida");
 
-           
+            Control caver = GameObject.FindGameObjectWithTag("Player").GetComponent<Control>();
             caver.velCaminar = caver.velCaminar * 2;
             Invoke("normalizar", 2.9f);
             GetComponent<SpriteRenderer>().enabled = false;

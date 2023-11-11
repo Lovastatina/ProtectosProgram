@@ -6,22 +6,27 @@ public class DanioProgresivo : MonoBehaviour
 {
     private Animator miItem;
     private EffetiSonore misSonidos;
-    public Personaggio elPersonn;
-    public int valorDanio;
+    public int valorDanio = 10;
+    public GameObject veneno;
     // Start is called before the first frame update
 
-   
+
 
     void Start()
     {
         miItem = GetComponent<Animator>();
         misSonidos = GetComponent<EffetiSonore>();
-        elPersonn = GetComponent<Personaggio>();
+       
     }
 
     private void daniarTiempo()
     {
+        Personaggio elPersonn = GameObject.FindGameObjectWithTag("Player").GetComponent<Personaggio>();
         elPersonn.fareDamage(valorDanio, this.gameObject);
+        misSonidos.reproducir("Veneno");
+        GameObject efettoVeneno = Instantiate(veneno);
+        efettoVeneno.transform.position = elPersonn.transform.position;
+       
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -30,17 +35,18 @@ public class DanioProgresivo : MonoBehaviour
 
         if (otroObjeto.tag == "Player")
         {
-            print("Se recogió tesoro");
+            print("Se envenenó");
 
             Personaggio elPepe = otroObjeto.GetComponent<Personaggio>();
 
             if (elPepe.estaVivo())
             {
+                
                 miItem.SetTrigger("Agarrar");
-                misSonidos.reproducir("Veneno");
-                InvokeRepeating("daniarTiempo", 0f, 2f);
+                InvokeRepeating("daniarTiempo", 0.5f, 3f);
                 GetComponent<CapsuleCollider2D>().enabled = false;
-                Destroy(gameObject, 8.1f);
+                Destroy(gameObject, 9f);
+              
 
             }
 

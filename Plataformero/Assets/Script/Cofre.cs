@@ -21,8 +21,9 @@ public class Cofre : MonoBehaviour
     private void aparecer()
     {
         GameObject Moneda = Instantiate(PrefabMoneda);
+        Moneda.transform.position = new Vector2(transform.position.x, transform.position.y - 0.55f);
         Moneda.GetComponent<Animator>().SetTrigger("Cofre");
-        Destroy(gameObject, 2f);
+        
     }
     
     private void OnTriggerEnter2D(Collider2D col)
@@ -64,6 +65,7 @@ public class Cofre : MonoBehaviour
                 GameObject envoltorio = new GameObject();
                 envoltorio.transform.position = transform.position;
                 Invoke("aparecer", 0.5f);
+                Destroy(gameObject, 2f);
             }
         }
     }
