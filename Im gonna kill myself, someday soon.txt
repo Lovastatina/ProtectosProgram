@@ -121,14 +121,7 @@ juego representativo, descripcion genera, tres mecanicas desde perspectiva tenci
 
 meter collider tipo trigger, etiquetar como tesoro, ajustar bien el pivot, implementar un script que se llame tesoro, atributo llamado valor que se suma a un contador en el personaje llamadop monei,
 
-eN EL otrigger verificar si tubivmos contatcto con giocattore, y sumamos al contador, y que la moneda desaparezca, se hace animnacion con animater, se hace traslusida; cuando toque la moneda el collider deja de funcionar, tienen que destruir la moneda pero no instantanea
-10*1
-
-
-
-
-
-
+Al finalizar celevracion, coleccionable nuevo, aumenta el contador, si al tocar la meta tenemos ese item. Un premio adicional de vidas + 1
 
 
 

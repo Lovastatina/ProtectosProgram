@@ -123,8 +123,8 @@ public class ChisaiiNemico : MonoBehaviour
         {
             GetComponent<BoxCollider2D>().enabled = false;
             elCuerpo.simulated = false;
-            Invoke("aparecer", 1.3f);
-            Destroy(gameObject, 1.3f);
+            Invoke("aparecer", 1.6f);
+            Destroy(gameObject, 1.6f);
            
 
         }

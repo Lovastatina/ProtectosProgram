@@ -9,6 +9,7 @@ public class Cofre : MonoBehaviour
     public GameObject anuncio;
     private bool contacto;
     public GameObject PrefabMoneda;
+    public Transform cofre;
    
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,9 @@ public class Cofre : MonoBehaviour
 
     private void aparecer()
     {
-        GameObject Moneda = Instantiate(PrefabMoneda);
-        Moneda.transform.position = new Vector2(transform.position.x, transform.position.y - 0.55f);
-        Moneda.GetComponent<Animator>().SetTrigger("Cofre");
+        Instantiate(PrefabMoneda, cofre.position,cofre.rotation);
+        
+     
         
     }
     
@@ -62,10 +63,8 @@ public class Cofre : MonoBehaviour
             {
                 miItem.SetTrigger("abrir");
                 GetComponent<CapsuleCollider2D>().enabled = false;
-                GameObject envoltorio = new GameObject();
-                envoltorio.transform.position = transform.position;
                 Invoke("aparecer", 0.5f);
-                Destroy(gameObject, 2f);
+                Destroy(gameObject, 2.5f);
             }
         }
     }

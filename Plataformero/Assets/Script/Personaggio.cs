@@ -101,20 +101,21 @@ public class Personaggio : MonoBehaviour
 
     public void muerteInstantanea(GameObject who)
     {
-        block = true;
-        print(name + " murió instantaneamente por" + who);
-        hp = 0;
-        misSonidos.reproducir("Morte");
-        miAnimadore.SetTrigger("morir");
-        Personaggio elPerr = GetComponent<Personaggio>();
-        GameObject efettoVite = Instantiate(persoVite);
-        efettoVite.transform.position = elPerr.transform.position;
+        
 
-        if (tag == "Player")
+        if (tag == "Player" && estaVivo())
         {
             Personaggio.vite = Personaggio.vite - 1;
-           
-            if(Personaggio.vite != 0)
+            block = true;
+            print(name + " murió instantaneamente por" + who);
+            hp = 0;
+            misSonidos.reproducir("Morte");
+            miAnimadore.SetTrigger("morir");
+            Personaggio elPerr = GetComponent<Personaggio>();
+            GameObject efettoVite = Instantiate(persoVite);
+            efettoVite.transform.position = elPerr.transform.position;
+
+            if (Personaggio.vite != 0)
             { 
                 Invoke("reiniciar", 3f);
             }
