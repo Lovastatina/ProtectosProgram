@@ -14,7 +14,6 @@ public class Nose : MonoBehaviour
     public int MinX = -2;
     public int MinY = -2;
 
-    // Start is called before the first frame update
     void Start()
     {
         Set();
@@ -27,7 +26,6 @@ public class Nose : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
