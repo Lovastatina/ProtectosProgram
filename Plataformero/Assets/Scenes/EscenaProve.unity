@@ -1881,6 +1881,8 @@ MonoBehaviour:
   sangue: {fileID: 1040608886635896, guid: a97415c6b57076f41a6621a7b51d63a3, type: 3}
   persoVite: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
   block: 0
+  dinero: 0
+  especial: 0
 --- !u!114 &376175169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1898,6 +1900,7 @@ MonoBehaviour:
   rangoAtaque: 7
   caver: {fileID: 819285184}
   nemico: {fileID: 376175162}
+  PrefabRecompensa: {fileID: 0}
 --- !u!61 &376175170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1941,11 +1944,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4866723424597831083, guid: eceec1f61b7bf7d4ba2afd623ce02546, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.41
+      value: -26.03
       objectReference: {fileID: 0}
     - target: {fileID: 4866723424597831083, guid: eceec1f61b7bf7d4ba2afd623ce02546, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.76
+      value: -1.87
       objectReference: {fileID: 0}
     - target: {fileID: 4866723424597831083, guid: eceec1f61b7bf7d4ba2afd623ce02546, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2136,6 +2139,8 @@ MonoBehaviour:
   sangue: {fileID: 8205706795460263314, guid: 326e86d5729c54e479798cacab220bb2, type: 3}
   persoVite: {fileID: 1687118924408352, guid: 77c69ec12208c4c4380d15e30b6f8f68, type: 3}
   block: 0
+  dinero: 0
+  especial: 0
 --- !u!95 &572886773
 Animator:
   serializedVersion: 4
@@ -2240,6 +2245,7 @@ MonoBehaviour:
   caver: {fileID: 819285184}
   nemico: {fileID: 572886775}
   enemico: {fileID: 572886769}
+  PrefabRecompensa: {fileID: 0}
 --- !u!70 &572886777
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -2657,6 +2663,7 @@ MonoBehaviour:
   caver: {fileID: 819285184}
   nemico: {fileID: 1802423546}
   enemico: {fileID: 1802423544}
+  PrefabRecompensa: {fileID: 0}
 --- !u!114 &1802423550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2784,6 +2791,8 @@ MonoBehaviour:
   sangue: {fileID: 100000, guid: bc98890f6028f444eaa7789bde5e2eeb, type: 3}
   persoVite: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
   block: 0
+  dinero: 0
+  especial: 0
 --- !u!95 &1802423553
 Animator:
   serializedVersion: 4

@@ -17,6 +17,7 @@ public class Personaggio : MonoBehaviour
     public bool block = false;
     public static event Action muerteFinal;
     public int dinero;
+    public int especial;
 
 
     // Start is called before the first frame update

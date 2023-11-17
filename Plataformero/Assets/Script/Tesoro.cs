@@ -7,6 +7,7 @@ public class Tesoro : MonoBehaviour
     private Animator miTesoro;
     private EffetiSonore misSonidos;
     
+
     public int valorScore;
     public int valorDinero;
     private void OnTriggerEnter2D(Collider2D col)

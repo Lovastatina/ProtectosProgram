@@ -147,8 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 304f8969001a7fb4cbeb4481f168a858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fire: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f, type: 3}
-  man: {fileID: 0}
+  fire: {fileID: 100006, guid: 60bc526f4be1e044ab9e46340b82ffb3, type: 3}
 --- !u!82 &794922128462116888
 AudioSource:
   m_ObjectHideFlags: 0
