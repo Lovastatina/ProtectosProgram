@@ -8,7 +8,7 @@ public class Control : MonoBehaviour
     public float velCaminar = 10;
     public float fuerzaSalto = 23;
     public bool enPiso;
-    int e = 2 ;
+    int e = 2;
 
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
@@ -41,15 +41,15 @@ public class Control : MonoBehaviour
         {
             miAnimador.SetTrigger("golpear");
         }
-        
-        if(movHoriz > 0 && puedoMover)
+
+        if (movHoriz > 0 && puedoMover)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
             miCuerpo.velocity = new Vector3(velCaminar, velVert, 0);
-            miAnimador.SetBool("Caminando", true);         
+            miAnimador.SetBool("Caminando", true);
         }
 
-        else if(movHoriz<0 && puedoMover)
+        else if (movHoriz < 0 && puedoMover)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
             miCuerpo.velocity = new Vector3(-velCaminar, velVert, 0);
@@ -71,16 +71,16 @@ public class Control : MonoBehaviour
             e = e - 1;
         }
 
-        else if (e > 0 & movSalto==true && puedoMover)
+        else if (e > 0 & movSalto == true && puedoMover)
         {
             misSonidos.reproducir("Salto");
             miCuerpo.AddForce(transform.up * fuerzaSalto, ForceMode2D.Impulse);
-            e = e- 1;
+            e = e - 1;
         }
-         
 
-    
-        
+
+
+
 
         miAnimador.SetFloat("vel_ver", velVert);
 
@@ -96,5 +96,5 @@ public class Control : MonoBehaviour
 
     }
 
-  
+
 }
