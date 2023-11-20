@@ -21,6 +21,12 @@ public class Meta : MonoBehaviour
         SceneManager.LoadScene("EscenaProve", LoadSceneMode.Single );
     }
 
+    private void efectoz()
+    {
+        GameObject efectos = Instantiate(goal);
+        efectos.transform.position = transform.position;
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         GameObject otroObjeto = col.gameObject;
@@ -30,14 +36,13 @@ public class Meta : MonoBehaviour
         if (otroObjeto.tag == "Player" && elPersonn.estaVivo())
         {
             GetComponent<CapsuleCollider2D>().enabled = false;
-            GameObject efectos = Instantiate(goal);
-            efectos.transform.position = transform.position;
+            
             misSonidos.reproducir("check");
             elPersonn.block = true;
             Animator caver = elPersonn.GetComponent<Animator>();
             caver.SetTrigger("ganar");
-            
-            Invoke("cambiarNivel", 5f);
+            InvokeRepeating("efectoz", 0f, 2f);
+            Invoke("cambiarNivel", 4.5f);
 
             if(elPersonn.especial != 0)
             {
