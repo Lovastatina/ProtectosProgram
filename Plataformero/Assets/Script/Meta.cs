@@ -36,7 +36,7 @@ public class Meta : MonoBehaviour
         if (otroObjeto.tag == "Player" && elPersonn.estaVivo())
         {
             GetComponent<CapsuleCollider2D>().enabled = false;
-            
+
             misSonidos.reproducir("check");
             elPersonn.block = true;
             Animator caver = elPersonn.GetComponent<Animator>();
@@ -44,8 +44,9 @@ public class Meta : MonoBehaviour
             InvokeRepeating("efectoz", 0f, 2f);
             Invoke("cambiarNivel", 4.5f);
 
-            if(elPersonn.especial != 0)
+            if (elPersonn.especial != 0)
             {
+                
                 Personaggio.vite += elPersonn.especial;
                 GameObject heal = Instantiate(curar);
                 heal.transform.position = elPersonn.transform.position;
