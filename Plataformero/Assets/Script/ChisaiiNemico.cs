@@ -10,7 +10,6 @@ public class ChisaiiNemico : MonoBehaviour
     private Animator elAnimador;
     private GameObject heroJugador;
     public float rangoAgro = 3;
-    public Transform caver;
     public Transform nemico;
     private Personaggio elEnemigo;
     public GameObject enemico;
@@ -20,7 +19,7 @@ public class ChisaiiNemico : MonoBehaviour
     {
         GameObject Recompensa = Instantiate(PrefabRecompensa);
         Recompensa.transform.position = new Vector2(transform.position.x,transform.position.y - 0.55f);
-
+       
 
     }
 
@@ -74,6 +73,7 @@ public class ChisaiiNemico : MonoBehaviour
         elAnimador = GetComponent<Animator>();
         elEnemigo = GetComponent<Personaggio>();
         heroJugador = GameObject.FindGameObjectWithTag("Player");
+
     }
     void Update()
     {
@@ -81,6 +81,8 @@ public class ChisaiiNemico : MonoBehaviour
         Vector3 posHeroe = heroJugador.transform.position;
         float distanciaHeroe = (miPos - posHeroe).magnitude;
         Personaggio heroeVivo = heroJugador.GetComponent<Personaggio>();
+        Transform caver = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
 
         if (distanciaHeroe < rangoAgro && heroeVivo.estaVivo())
         {
@@ -97,14 +99,14 @@ public class ChisaiiNemico : MonoBehaviour
         if (cerca==true && elEnemigo.estaVivo())
         {
             elAnimador.SetBool("Cam", true);
-            if (caver.position.x < nemico.position.x)
+            if (caver.position.x < transform.position.x)
             {
                 elCuerpo.velocity = new Vector3(-velCam, 0, 0);
                 transform.rotation = Quaternion.Euler(0, 0, 0);
 
             }
 
-            else if (nemico.position.x < caver.position.x)
+            else if (transform.position.x < caver.position.x)
             {
                 elCuerpo.velocity = new Vector3(velCam, 0, 0);
                 transform.rotation = Quaternion.Euler(0, 180, 0);

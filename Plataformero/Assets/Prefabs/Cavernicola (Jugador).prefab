@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4866723424597831076}
   - component: {fileID: 7069379076087485247}
   - component: {fileID: 3412106676003902491}
+  - component: {fileID: 4420026629992510686}
   m_Layer: 0
   m_Name: Cavernicola (Jugador)
   m_TagString: Player
@@ -164,6 +165,7 @@ MonoBehaviour:
   velCaminar: 5
   fuerzaSalto: 8
   enPiso: 1
+  PrefabMoneda: {fileID: 0}
 --- !u!114 &4866723424597831076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +295,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   misEfectos: []
+--- !u!114 &4420026629992510686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866723424597831085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9ce15037ac21846ae95c0e00612d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vel: 2
+  MaxX: 200
+  MaxY: 200
+  MinX: -200
+  MinY: -200
 --- !u!1 &7551866792117362039
 GameObject:
   m_ObjectHideFlags: 0

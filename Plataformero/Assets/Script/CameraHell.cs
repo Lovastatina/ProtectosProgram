@@ -18,7 +18,7 @@ public class CameraHell : MonoBehaviour
     {
         if (Heroe.estaVivo())
         {
-            transform.position = new Vector3(Heroe.transform.position.x, Heroe.transform.position.y, -1);
+            transform.position = new Vector3(Heroe.transform.position.x, Heroe.transform.position.y +3.5f, -1);
         }
         
     }

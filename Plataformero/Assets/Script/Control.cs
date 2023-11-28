@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Control : MonoBehaviour
@@ -14,6 +15,10 @@ public class Control : MonoBehaviour
     private Animator miAnimador;
     private EffetiSonore misSonidos;
     private Personaggio miPersonaje;
+
+
+    public GameObject PrefabMoneda;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +46,38 @@ public class Control : MonoBehaviour
         {
             miAnimador.SetTrigger("golpear");
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Personaggio.vite = 3;
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SceneManager.LoadScene("EscenaProve", LoadSceneMode.Single);
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SceneManager.LoadScene("Nivel Uno", LoadSceneMode.Single);
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GameObject Recompensa = Instantiate(PrefabMoneda);
+            Recompensa.transform.position = new Vector2(transform.position.x + 3, transform.position.y + 5.5f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            GetComponent<Control>().enabled = false;
+            GetComponent<Nose>().enabled = true;
+            miCuerpo.isKinematic = true;
+        }
+
+       
+
 
         if (movHoriz > 0 && puedoMover)
         {
@@ -83,6 +120,13 @@ public class Control : MonoBehaviour
 
 
         miAnimador.SetFloat("vel_ver", velVert);
+
+        
+
+
+
+
+
 
     }
 
